@@ -17,7 +17,8 @@ public class ContaInvestimentoPJ extends ContaCorrentePJ {
         super.setSaldo(new BigDecimal("0"));
     }
 
-    public BigDecimal rendimento() {
+    @Override
+    public BigDecimal getSaldo() {
         BigDecimal resultado = super.getSaldo().multiply(TAXA_RENDIMENTO);
         return resultado;
     }

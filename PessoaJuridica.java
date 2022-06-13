@@ -16,9 +16,9 @@ public class PessoaJuridica extends Pessoa {
     }
 
     @Override
-    public Conta abreContaInvestimento() {
+    public ContaInvestimentoPJ abreContaInvestimento() {
         if (this.cc.isInvestimento()) {
-            ContaInvestimento cio = new ContaInvestimento(this);
+            ContaInvestimentoPJ cio = new ContaInvestimentoPJ(this);
             System.out.println("Nova conta investimento foi criada");
             return cio;
         }

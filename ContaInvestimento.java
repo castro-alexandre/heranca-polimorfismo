@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 public class ContaInvestimento extends Conta {
     
     private static int numClientes = 0;
-    final private static BigDecimal TAXA_RENDIMENTO = new BigDecimal("0.01");
+    final private static BigDecimal TAXA_RENDIMENTO = new BigDecimal("1");
 
     public ContaInvestimento(Pessoa cliente) {
         super.setCliente(cliente);
