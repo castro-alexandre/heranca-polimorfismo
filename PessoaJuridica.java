@@ -1,4 +1,4 @@
-public class PessoaJuridica extends Pessoa {
+public class PessoaJuridica extends Pessoa implements AbrirConta {
 
     private String cnpj;
     private ContaCorrentePJ cc;

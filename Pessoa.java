@@ -9,8 +9,4 @@ public abstract class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public abstract Conta abreContaCorrente();
-
-    public abstract Conta abreContaInvestimento();
 }
