@@ -5,7 +5,7 @@ public class ContaPoupanca extends Conta implements Investimento {
     private static int numClientes = 0;
     final private BigDecimal TAXA_RENDIMENTO = new BigDecimal("0.005");
 
-    public ContaPoupanca(Pessoa cliente) {
+    public ContaPoupanca(PessoaFisica cliente) {
         super.setCliente(cliente);
         super.setCodigoConta(++ContaPoupanca.numClientes);
         super.setSaldo(new BigDecimal("0"));

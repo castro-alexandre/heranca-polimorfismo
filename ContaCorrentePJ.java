@@ -29,7 +29,7 @@ public class ContaCorrentePJ extends Conta implements Investimento {
 
     @Override
     public void investe(BigDecimal valor) {
-        super.transfere(valor, this.ci);
+        this.transfere(valor, this.ci);
     }
 
     public boolean isInvestimento() {

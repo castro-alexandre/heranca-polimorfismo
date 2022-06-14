@@ -56,4 +56,14 @@ public abstract class Conta {
     public void setSaldo(BigDecimal saldo) {
         this.saldo = saldo;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " cliente='" + getCliente() + "'" +
+            ", codigoConta='" + getCodigoConta() + "'" +
+            ", saldo='" + getSaldo() + "'" +
+            "}";
+    }
+
 }

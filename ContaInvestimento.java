@@ -5,7 +5,7 @@ public class ContaInvestimento extends Conta {
     private static int numClientes = 0;
     final private static BigDecimal TAXA_RENDIMENTO = new BigDecimal("1");
 
-    public ContaInvestimento(Pessoa cliente) {
+    public ContaInvestimento(PessoaFisica cliente) {
         super.setCliente(cliente);
         super.setCodigoConta(++ContaInvestimento.numClientes);
         super.setSaldo(new BigDecimal("0"));
